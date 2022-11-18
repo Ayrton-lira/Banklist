@@ -4,7 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="loginNavigator">
+        <h3 class="welcome">Welcome back,"Name"</h3>
+        <img id="logo" src="images/logo.png" alt="logo" />
+        <div class="login">
+          <input id="user" type="text" placeholder="user" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="PIN"
+          />
+          <img id="setaLogin" src="images/seta-direita.png" alt="go" />
+        </div>
+      </nav>
+    </header>
+    <div class="containerData">
+      <div class="balance">
+        <h3 class="titleBalance">Current balance</h3>
+        <p class="money">3840€</p>
+      </div>
+      <main class="information"></main>
+      <aside>
+        <div class="Transfer">
+          <h1 class="titleFunction">Transfer money</h1>
+          <div class="globalContainer">
+            <div class="containerMoviments">
+              <input id="Data" type="text" />
+              <p class="infoText">Tranfer to</p>
+            </div>
+            <div class="containerMoviments">
+              <input id="Amount-Transfer" type="text" />
+              <p class="infoText">Amount</p>
+            </div>
+            <img
+              id="seta"
+              class="seta"
+              src="images/seta-direita.png"
+              alt="seta"
+            />
+          </div>
+        </div>
+        <div class="Request">
+          <h1 class="titleFunction">Request loan</h1>
+          <div class="globalContainer">
+            <div class="containerMoviments">
+              <input id="Amount-Request" type="text" />
+              <p class="infoText">Amount</p>
+            </div>
+            <img id="seta" src="images/seta-direita.png" alt="seta" />
+          </div>
+        </div>
+        <div class="Close">
+          <h1 class="titleFunction">Close account</h1>
+          <div class="globalContainer">
+            <div class="containerMoviments">
+              <input id="Confirm-User" type="text" />
+              <p class="infoText">Confirm User</p>
+            </div>
+            <div class="containerMoviments">
+              <input id="Confirm-PIN" type="text" />
+              <p class="infoText">Confirm PIN</p>
+            </div>
+            <img id="seta" src="images/seta-direita.png" alt="seta" />
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
