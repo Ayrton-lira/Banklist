@@ -21,10 +21,6 @@ body {
   background-color: rgb(243, 247, 250);
 }
 
-div.containerData {
-  margin: 40px 80px;
-}
-
 div.balance {
   display: flex;
   justify-content: space-between;
@@ -35,7 +31,7 @@ div.balance {
   font-size: 30px;
 }
 
-.money {
+.amount-Money {
   font-size: 35px;
 }
 
@@ -45,9 +41,9 @@ nav.loginNavigator {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 25px;
+  margin: 25px 70px 25px 70px;
   padding: 15px;
-  background-color: rgb(210, 246, 246);
+  background-color: rgb(171, 190, 190);
   border-radius: 1rem;
 }
 
@@ -67,7 +63,8 @@ main {
   overflow: auto;
 }
 
-div.containerData {
+section.containerData {
+  margin: 50px 80px 0px 80px;
   display: grid;
   grid-template-areas:
     "title title"
@@ -163,8 +160,9 @@ div.withdrawal {
   align-items: center;
   height: 50px;
   justify-content: space-between;
-  margin: 15px 50px 15px 50px;
+  padding: 15px 50px 15px 50px;
   border-bottom: 1px solid;
+  /* background-color: aqua; */
 }
 
 p.deposit {
@@ -183,4 +181,49 @@ p.withdrawal {
   background: linear-gradient(153deg, rgba(226, 232, 227, 1) 0%, rgba(230, 74, 36, 0.9886201991465149) 30%, rgba(250, 117, 63, 1) 100%);
   border-radius: 0.2rem;
   width: 90px;
+}
+
+/* Footer */
+
+footer {
+  margin: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.footer-balance {
+  display: flex;
+  gap: 1rem;
+  /* background-color: aquamarine; */
+}
+
+.income,
+.outcome,
+.interest {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 15px;
+}
+
+.income-Amount,
+.outcome-Amount,
+.interest-Amount {
+
+  font-size: 25px;
+  position: relative;
+  bottom: 8px;
+}
+
+.income-Amount,
+.interest-Amount {
+  color: rgb(47, 255, 54);
+}
+
+.outcome-Amount {
+  color: rgb(255, 92, 47);
+}
+
+img.seta-Baixo {
+  height: 12px;
+  width: auto;
 }
